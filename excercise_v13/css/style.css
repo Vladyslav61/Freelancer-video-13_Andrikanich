@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Arial-mt", Arial, Helvetica, sans-serif;
+  src: url("/fonts/arial-mt/02587_ARIALMT.ttf");
+}
+body {
+  background-color: #e8e8e8;
+  font-family: "Arial-mt";
+}
+main {
+  /* padding-left: 290px;
+  padding-top: 123px;
+  padding-right: 384px; */
+  padding: 123px 384px 0 290px;
+}
+h1 {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+}
+
+.list {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #273d46;
+}
+.list li {
+  margin-bottom: 13px;
+}
+.list li::before {
+  content: url("/img/check_icon.png");
+  /* background-image: url("/img/check_icon.png"); */
+  width: 25px;
+  height: 19px;
+  margin-right: 11px;
+}
+.list li:first-child {
+  text-decoration: line-through;
+}
