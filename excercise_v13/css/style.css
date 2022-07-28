@@ -2,13 +2,18 @@
   padding: 0;
   margin: 0;
 }
-@font-face {
+/* @font-face {
   font-family: "Arial-mt", Arial, Helvetica, sans-serif;
   src: url("/fonts/arial-mt/02587_ARIALMT.ttf");
 }
+@font-face {
+  font-family: "Socialico", Arial, sans-serif;
+  src: url("./fonts/socialico/Socialico.ttf");
+} */
 body {
   background-color: #e8e8e8;
-  font-family: "Arial-mt";
+  /* font-family: "Arial-mt"; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 main {
   /* padding-left: 290px;
@@ -27,19 +32,100 @@ h1 {
 .list {
   list-style: none;
   font-size: 20px;
+  line-height: 1.65;
   font-weight: 400;
   color: #273d46;
-}
-.list li {
-  margin-bottom: 13px;
+  margin-bottom: 137px;
 }
 .list li::before {
   content: url("/img/check_icon.png");
-  /* background-image: url("/img/check_icon.png"); */
   width: 25px;
   height: 19px;
   margin-right: 11px;
 }
 .list li:first-child {
   text-decoration: line-through;
+}
+.list li:first-child:hover {
+  text-decoration: none;
+}
+.list li:nth-child(2) {
+  font-weight: 600;
+}
+.list li:nth-child(2):hover {
+  color: #d55a5a;
+}
+.list li:nth-child(2):hover::before {
+  content: url("/img/check\ icon_red.png");
+}
+.list li:nth-child(3) {
+  font-style: italic;
+}
+.list li:nth-child(3):hover {
+  font-style: normal;
+}
+.list li:last-child {
+  text-transform: uppercase;
+}
+.list li:last-child:hover {
+  text-transform: none;
+}
+
+/* Button */
+.button {
+  width: 199px;
+  height: 44px;
+  border: none;
+  border-radius: 20px;
+  background-color: #80b7b3;
+  color: #fff;
+  margin-bottom: 118px;
+  margin-left: 34px;
+  /* align-items: center; */
+  padding-top: 4px;
+}
+.button-name {
+  text-transform: uppercase;
+  /* display: inline-block; */
+}
+/* .button-arrow {
+  vertical-align: middle;
+  margin-left: 9px;
+} */
+.button-name::after {
+  display: inline-block;
+  content: "";
+  /* content: url("/img/Shape_2.png"); */
+  width: 24px;
+  height: 18px;
+  margin-left: 9px;
+  background-image: url("/img/Shape_2.png");
+  background-repeat: no-repeat;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  vertical-align: middle;
+}
+.button:hover {
+  background-color: #3a5856;
+}
+.button:focus {
+  background-color: #818181;
+}
+.text-block-one {
+  font-size: 18px;
+  margin-bottom: 43px;
+  width: 781px;
+  line-height: 1.65;
+}
+.text-block-one::first-line {
+  color: #ff0000;
+}
+.text-block-two {
+  font-size: 18px;
+  width: 781px;
+  line-height: 1.65;
+}
+.text-block-two::first-letter {
+  font-size: 25px;
+  color: #ff0000;
 }
